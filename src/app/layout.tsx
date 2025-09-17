@@ -1,6 +1,6 @@
 import clsx from 'clsx';
-import 'src/styles/splash-screen.css';
-import 'src/styles/index.css';
+import '@/styles/splash-screen.css';
+import '@/styles/index.css';
 import { AuthProvider } from '@/contexts/AuthContext';
 import generateMetadata from '../utils/generateMetadata';
 import App from './App';
