@@ -1,13 +1,13 @@
 import { useMemo, useState, useEffect } from 'react';
 import { type MRT_ColumnDef } from 'material-react-table';
-import DataTable from 'src/components/data-table/DataTable';
+import DataTable from '@/components/data-table/DataTable';
 import FuseLoading from '@fuse/core/FuseLoading';
 import { Typography, Chip, Paper, Button } from '@mui/material';
 import Link from '@fuse/core/Link';
 import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
 import { useGetInvoicesQuery, useDeleteInvoicesMutation } from './InvoiceApi';
 import { Invoice } from './InvoiceApi';
-import { getInvoiceStatusName, getInvoiceStatusColor, INVOICE_STATUS } from 'src/constants/invoiceStatus';
+import { getInvoiceStatusName, getInvoiceStatusColor, INVOICE_STATUS } from '@/constants/invoiceStatus';
 import InvoiceSearchDialog from './components/InvoiceSearchDialog';
 
 const STORAGE_KEY = 'invoiceSearchParams';

@@ -1,7 +1,7 @@
 import Dialog from '@mui/material/Dialog';
-import { useAppDispatch, useAppSelector } from 'src/store/hooks';
+import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { closeDialog, selectFuseDialogProps } from '@fuse/core/FuseDialog/fuseDialogSlice';
-import { useDialogClose } from 'src/hooks/useDialogClose';
+import { useDialogClose } from '@/hooks/useDialogClose';
 
 /**
  * FuseDialog component

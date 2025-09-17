@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
 import useNavigate from '@fuse/hooks/useNavigate';
 import useThemeMediaQuery from '@fuse/hooks/useThemeMediaQuery';
-import PageBreadcrumb from 'src/components/PageBreadcrumb';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 
 function EsimsHeader() {
 	const navigate = useNavigate();

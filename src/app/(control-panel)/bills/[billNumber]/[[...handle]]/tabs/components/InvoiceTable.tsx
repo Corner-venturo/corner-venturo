@@ -1,7 +1,7 @@
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Checkbox } from '@mui/material';
 import { format } from 'date-fns';
 import { Invoice } from '@/app/(control-panel)/invoices/InvoiceApi';
-import { INVOICE_STATUS } from 'src/constants/invoiceStatus';
+import { INVOICE_STATUS } from '@/constants/invoiceStatus';
 
 interface InvoiceTableProps {
 	invoices: Invoice[];

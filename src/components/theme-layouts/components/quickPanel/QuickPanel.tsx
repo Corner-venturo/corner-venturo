@@ -12,7 +12,7 @@ import Switch from '@mui/material/Switch';
 import Typography from '@mui/material/Typography';
 import { format } from 'date-fns/format';
 import { useState } from 'react';
-import { useAppDispatch, useAppSelector } from 'src/store/hooks';
+import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
 import { selectQuickPanelData, selectQuickPanelOpen, toggleQuickPanel } from './quickPanelSlice';
 

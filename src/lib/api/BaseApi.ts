@@ -1,4 +1,4 @@
-import { apiService as api } from 'src/store/apiService';
+import { apiService as api } from '@/store/apiService';
 import { PartialDeep } from 'type-fest';
 import type { EndpointBuilder } from '@reduxjs/toolkit/query';
 

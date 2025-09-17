@@ -1,6 +1,6 @@
 'use client';
 
-import { useAppSelector } from 'src/store/hooks';
+import { useAppSelector } from '@/store/hooks';
 import { useMemo } from 'react';
 import i18n from '@i18n';
 import useUser from '@auth/useUser';

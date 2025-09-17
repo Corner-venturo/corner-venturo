@@ -17,7 +17,7 @@ import { Controller, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useAuth } from '@/contexts/AuthContext';
 import { Esim, useCreateEsimMutation } from '../EsimApi';
-import { useDialogClose } from 'src/hooks/useDialogClose';
+import { useDialogClose } from '@/hooks/useDialogClose';
 import LoadingButton from '@/components/common/LoadingButton';
 import { EsimFormData, esimSchema } from '../schemas/esimSchema';
 

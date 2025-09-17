@@ -5,7 +5,7 @@ import { useFormContext } from 'react-hook-form';
 import { useParams } from 'next/navigation';
 import _ from 'lodash';
 import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
-import PageBreadcrumb from 'src/components/PageBreadcrumb';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 import useNavigate from '@fuse/hooks/useNavigate';
 import { useAuth } from '@/contexts/AuthContext';
 import { Esim, useCreateEsimMutation, useDeleteEsimMutation, useUpdateEsimMutation } from '../EsimApi';
@@ -15,7 +15,7 @@ import { maxNumberGetDbNumber } from '@/@max-numbers/maxNumberApi';
 import {
 	useCreateFastMoveOrderMutation,
 	useGetFastMoveProductsQuery
-} from 'src/app/api/supabase/fast-move/FastMoveApi';
+} from '@/app/api/supabase/fast-move/FastMoveApi';
 
 function EsimHeader() {
 	const routeParams = useParams<{ esimNumber: string }>();

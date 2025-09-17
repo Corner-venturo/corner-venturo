@@ -1,7 +1,7 @@
-import { useAppDispatch } from 'src/store/hooks';
+import { useAppDispatch } from '@/store/hooks';
 import useThemeMediaQuery from '@fuse/hooks/useThemeMediaQuery';
-import NavbarToggleFab from 'src/components/theme-layouts/components/navbar/NavbarToggleFab';
-import { navbarToggle, navbarToggleMobile } from 'src/components/theme-layouts/components/navbar/navbarSlice';
+import NavbarToggleFab from '@/components/theme-layouts/components/navbar/NavbarToggleFab';
+import { navbarToggle, navbarToggleMobile } from '@/components/theme-layouts/components/navbar/navbarSlice';
 
 type NavbarToggleFabLayout2Props = {
 	className?: string;

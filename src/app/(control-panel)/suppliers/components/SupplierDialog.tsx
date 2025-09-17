@@ -19,9 +19,9 @@ import { Controller, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useAuth } from '@/contexts/AuthContext';
 import { Supplier, useCreateSupplierMutation } from '../SupplierApi';
-import { SUPPLIER_TYPES } from 'src/constants/supplierTypes';
+import { SUPPLIER_TYPES } from '@/constants/supplierTypes';
 import { maxNumberGetDbNumber } from '@/@max-numbers/maxNumberApi';
-import { useDialogClose } from 'src/hooks/useDialogClose';
+import { useDialogClose } from '@/hooks/useDialogClose';
 import LoadingButton from '@/components/common/LoadingButton';
 import { SupplierFormData, supplierSchema } from '../schemas/supplierSchema';
 

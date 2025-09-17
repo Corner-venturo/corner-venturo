@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
 import NavLinkAdapter from '@fuse/core/NavLinkAdapter';
 import useThemeMediaQuery from '@fuse/hooks/useThemeMediaQuery';
-import PageBreadcrumb from 'src/components/PageBreadcrumb';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 import FuseUtils from '@fuse/utils/FuseUtils';
 import authRoles from '@auth/authRoles';
 import useUser from '@auth/useUser';

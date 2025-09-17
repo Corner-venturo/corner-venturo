@@ -1,6 +1,6 @@
 import { useMemo, useState, useEffect } from 'react';
 import { type MRT_ColumnDef } from 'material-react-table';
-import DataTable from 'src/components/data-table/DataTable';
+import DataTable from '@/components/data-table/DataTable';
 import FuseLoading from '@fuse/core/FuseLoading';
 import { Typography, Button, Paper } from '@mui/material';
 import Link from '@fuse/core/Link';
@@ -8,7 +8,7 @@ import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
 import ExcelJS from 'exceljs';
 import { useGetReceiptsQuery } from './ReceiptApi';
 import { Receipt } from './ReceiptApi';
-import { getReceiptTypeName } from 'src/constants/receiptTypes';
+import { getReceiptTypeName } from '@/constants/receiptTypes';
 import { RECEIPT_STATUS } from '@/constants/receiptStatus';
 import ReceiptSearchDialog from './components/ReceiptSearchDialog';
 import { format } from 'date-fns';

@@ -1,12 +1,12 @@
 import { Theme } from '@mui/system/createTheme';
 import { styled } from '@mui/material/styles';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import { useAppDispatch, useAppSelector } from 'src/store/hooks';
+import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import {
 	navbarCloseMobile,
 	resetNavbar,
 	selectFuseNavbar
-} from 'src/components/theme-layouts/components/navbar/navbarSlice';
+} from '@/components/theme-layouts/components/navbar/navbarSlice';
 import { useEffect } from 'react';
 import useFuseLayoutSettings from '@fuse/core/FuseLayout/useFuseLayoutSettings';
 import useThemeMediaQuery from '@fuse/hooks/useThemeMediaQuery';

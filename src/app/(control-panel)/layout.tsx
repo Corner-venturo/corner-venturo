@@ -1,4 +1,4 @@
-import MainLayout from 'src/components/MainLayout';
+import MainLayout from '@/components/MainLayout';
 import AuthGuard from '@/components/AuthGuard';
 
 function Layout({ children }) {

@@ -5,7 +5,7 @@ import { useFormContext } from 'react-hook-form';
 import { useParams } from 'next/navigation';
 import _ from 'lodash';
 import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
-import PageBreadcrumb from 'src/components/PageBreadcrumb';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 import useNavigate from '@fuse/hooks/useNavigate';
 import { useAuth } from '@/contexts/AuthContext';
 import { maxNumberGetDbNumber } from '@/@max-numbers/maxNumberApi';
@@ -18,7 +18,7 @@ import {
 	useUpdateInvoiceMutation
 } from '../../InvoiceApi';
 import { INVOICE_STATUS } from '@/constants/invoiceStatus';
-import { useGetSuppliersQuery } from 'src/app/(control-panel)/suppliers/SupplierApi';
+import { useGetSuppliersQuery } from '@/app/(control-panel)/suppliers/SupplierApi';
 import LoadingButton from '@/components/common/LoadingButton';
 
 function InvoiceHeader() {

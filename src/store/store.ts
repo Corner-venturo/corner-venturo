@@ -1,6 +1,6 @@
 import { Action, Middleware, ThunkAction, configureStore, createSelector } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query';
-import apiService from 'src/store/apiService';
+import apiService from '@/store/apiService';
 import rootReducer from './rootReducer';
 import { dynamicMiddleware } from './middleware';
 import { CalendarApi } from '../app/(control-panel)/calendar/CalendarApi';

@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useFormContext, useWatch } from 'react-hook-form';
-import { getInvoiceItemTypeName } from 'src/constants/invoiceItemTypes';
+import { getInvoiceItemTypeName } from '@/constants/invoiceItemTypes';
 import { useUserDictionary } from '@/app/(control-panel)/users/hooks/useUserDictionary';
 import { useSupplierDictionary } from '@/app/(control-panel)/suppliers/hooks/useSupplierDictionary';
 import { useBillCalculation } from '../hooks/useBillCalculation';

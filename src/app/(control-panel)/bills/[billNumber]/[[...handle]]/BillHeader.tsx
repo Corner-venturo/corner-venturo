@@ -5,7 +5,7 @@ import { useFormContext } from 'react-hook-form';
 import { useParams } from 'next/navigation';
 import _ from 'lodash';
 import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
-import PageBreadcrumb from 'src/components/PageBreadcrumb';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 import useNavigate from '@fuse/hooks/useNavigate';
 import { useAuth } from '@/contexts/AuthContext';
 import { Bill, useCreateBillMutation, useDeleteBillMutation, useUpdateBillMutation } from '../../BillApi';
@@ -16,7 +16,7 @@ import {
 	useUpdateInvoiceStatusMutation,
 	Invoice
 } from '@/app/(control-panel)/invoices/InvoiceApi';
-import { INVOICE_STATUS } from 'src/constants/invoiceStatus';
+import { INVOICE_STATUS } from '@/constants/invoiceStatus';
 import { BILL_STATUSES, BILL_STATUS_NAMES } from '@/constants/billStatuses';
 import handleCreatePDF from './BillPdf';
 import LoadingButton from '@/components/common/LoadingButton';

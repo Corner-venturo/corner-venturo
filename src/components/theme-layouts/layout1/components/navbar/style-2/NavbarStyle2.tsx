@@ -6,8 +6,8 @@ import {
 	navbarOpenFolded,
 	resetNavbar,
 	selectFuseNavbar
-} from 'src/components/theme-layouts/components/navbar/navbarSlice';
-import { useAppDispatch, useAppSelector } from 'src/store/hooks';
+} from '@/components/theme-layouts/components/navbar/navbarSlice';
+import { useAppDispatch, useAppSelector } from '@/store/hooks';
 
 import { Theme } from '@mui/system/createTheme';
 import { useEffect } from 'react';

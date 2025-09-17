@@ -21,11 +21,11 @@ import { Controller, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { InvoiceItem } from '@/app/(control-panel)/invoices/InvoiceApi';
-import { INVOICE_ITEM_TYPE_OPTIONS } from 'src/constants/invoiceItemTypes';
+import { INVOICE_ITEM_TYPE_OPTIONS } from '@/constants/invoiceItemTypes';
 import { useAuth } from '@/contexts/AuthContext';
-import { useGetSuppliersQuery } from 'src/app/(control-panel)/suppliers/SupplierApi';
-import { getSupplierTypesByInvoiceItemType } from 'src/constants/supplierTypes';
-import { useDialogClose } from 'src/hooks/useDialogClose';
+import { useGetSuppliersQuery } from '@/app/(control-panel)/suppliers/SupplierApi';
+import { getSupplierTypesByInvoiceItemType } from '@/constants/supplierTypes';
+import { useDialogClose } from '@/hooks/useDialogClose';
 import { generateId } from '@/utils/tools';
 
 // 表單驗證規則

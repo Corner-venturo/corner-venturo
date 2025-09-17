@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { RECEIPT_TYPES } from 'src/constants/receiptTypes';
+import { RECEIPT_TYPES } from '@/constants/receiptTypes';
 
 /**
  * 創建基本的收款 schema

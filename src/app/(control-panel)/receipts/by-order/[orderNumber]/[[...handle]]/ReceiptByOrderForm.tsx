@@ -7,10 +7,10 @@ import DialogActions from '@mui/material/DialogActions';
 import Button from '@mui/material/Button';
 import FuseLoading from '@fuse/core/FuseLoading';
 import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
-import { RECEIPT_TYPE_OPTIONS, RECEIPT_TYPES } from 'src/constants/receiptTypes';
-import { RECEIPT_STATUS_OPTIONS, RECEIPT_STATUS } from 'src/constants/receiptStatus';
+import { RECEIPT_TYPE_OPTIONS, RECEIPT_TYPES } from '@/constants/receiptTypes';
+import { RECEIPT_STATUS_OPTIONS, RECEIPT_STATUS } from '@/constants/receiptStatus';
 import { ReceiptFormData } from './ReceiptByOrder';
-import { useDialogClose } from 'src/hooks/useDialogClose';
+import { useDialogClose } from '@/hooks/useDialogClose';
 import { useEffect } from 'react';
 
 type ReceiptByOrderFormProps = {

@@ -5,7 +5,7 @@ import { useFormContext } from 'react-hook-form';
 import { useParams } from 'next/navigation';
 import _ from 'lodash';
 import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
-import PageBreadcrumb from 'src/components/PageBreadcrumb';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 import useNavigate from '@fuse/hooks/useNavigate';
 import { useAuth } from '@/contexts/AuthContext';
 import { Order, useCreateOrderMutation, useDeleteOrderMutation, useUpdateOrderMutation } from '../../OrderApi';

@@ -17,13 +17,13 @@ import { FormProvider, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useGetReceiptsByOrderNumberQuery, useGetReceiptQuery, useUpdateReceiptMutation } from '../../../ReceiptApi';
 import type { Receipt } from '../../../ReceiptApi';
-import { useGetOrderQuery } from 'src/app/(control-panel)/orders/OrderApi';
+import { useGetOrderQuery } from '@/app/(control-panel)/orders/OrderApi';
 import { useCreateLinkPayHandler } from '../../../hooks/useCreateLinkPayHandler';
 import ReceiptByOrderHeader from './ReceiptByOrderHeader';
 import ReceiptByOrderTable from './ReceiptByOrderTable';
 import ReceiptByOrderForm from './ReceiptByOrderForm';
-import { RECEIPT_TYPES } from 'src/constants/receiptTypes';
-import { RECEIPT_STATUS } from 'src/constants/receiptStatus';
+import { RECEIPT_TYPES } from '@/constants/receiptTypes';
+import { RECEIPT_STATUS } from '@/constants/receiptStatus';
 import { createReceiptSchema } from '../../../schemas/receiptSchema';
 
 // 定義表單數據類型

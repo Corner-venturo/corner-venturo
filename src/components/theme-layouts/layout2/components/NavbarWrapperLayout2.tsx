@@ -1,15 +1,15 @@
 import { styled, ThemeProvider } from '@mui/material/styles';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import { memo, useEffect } from 'react';
-import { useAppDispatch, useAppSelector } from 'src/store/hooks';
-import NavbarToggleFabLayout2 from 'src/components/theme-layouts/layout2/components/NavbarToggleFabLayout2';
+import { useAppDispatch, useAppSelector } from '@/store/hooks';
+import NavbarToggleFabLayout2 from '@/components/theme-layouts/layout2/components/NavbarToggleFabLayout2';
 import useThemeMediaQuery from '@fuse/hooks/useThemeMediaQuery';
 import {
 	navbarCloseMobile,
 	navbarSlice,
 	selectFuseNavbar
-} from 'src/components/theme-layouts/components/navbar/navbarSlice';
-import withSlices from 'src/store/withSlices';
+} from '@/components/theme-layouts/components/navbar/navbarSlice';
+import withSlices from '@/store/withSlices';
 import usePathname from '@fuse/hooks/usePathname';
 import { useNavbarTheme } from '@fuse/core/FuseSettings/hooks/fuseThemeHooks';
 import useFuseLayoutSettings from '@fuse/core/FuseLayout/useFuseLayoutSettings';

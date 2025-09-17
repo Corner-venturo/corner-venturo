@@ -1,8 +1,8 @@
 import { ThemeProvider } from '@mui/material/styles';
 import { useEffect } from 'react';
 import useThemeMediaQuery from '@fuse/hooks/useThemeMediaQuery';
-import { useAppDispatch, useAppSelector } from 'src/store/hooks';
-import { navbarCloseMobile, selectFuseNavbar } from 'src/components/theme-layouts/components/navbar/navbarSlice';
+import { useAppDispatch, useAppSelector } from '@/store/hooks';
+import { navbarCloseMobile, selectFuseNavbar } from '@/components/theme-layouts/components/navbar/navbarSlice';
 import usePathname from '@fuse/hooks/usePathname';
 import useFuseLayoutSettings from '@fuse/core/FuseLayout/useFuseLayoutSettings';
 import { useNavbarTheme } from '@fuse/core/FuseSettings/hooks/fuseThemeHooks';

@@ -1,5 +1,5 @@
 import IconButton from '@mui/material/IconButton';
-import { useAppDispatch } from 'src/store/hooks';
+import { useAppDispatch } from '@/store/hooks';
 import _ from 'lodash';
 import useThemeMediaQuery from '@fuse/hooks/useThemeMediaQuery';
 import FuseSvgIcon from '@fuse/core/FuseSvgIcon';

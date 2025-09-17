@@ -1,9 +1,9 @@
 import { Controller, useFormContext, useWatch } from 'react-hook-form';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { TextField, Checkbox, TableCell, TableRow, Typography, Box } from '@mui/material';
-import { BILL_STATUS_OPTIONS } from 'src/constants/billStatuses';
+import { BILL_STATUS_OPTIONS } from '@/constants/billStatuses';
 import { FormControl, InputLabel, Select, MenuItem, FormHelperText } from '@mui/material';
-import { INVOICE_STATUS } from 'src/constants/invoiceStatus';
+import { INVOICE_STATUS } from '@/constants/invoiceStatus';
 import { useEffect, useState } from 'react';
 import { useUserDictionary } from '@/app/(control-panel)/users/hooks/useUserDictionary';
 import { useInvoiceData } from '../InvoiceContext';

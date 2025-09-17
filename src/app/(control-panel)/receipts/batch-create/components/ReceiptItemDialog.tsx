@@ -6,7 +6,7 @@ import { Controller, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { DatePicker } from '@mui/x-date-pickers';
 import { RECEIPT_TYPES } from '@/constants/receiptTypes';
-import { useDialogClose } from 'src/hooks/useDialogClose';
+import { useDialogClose } from '@/hooks/useDialogClose';
 import { createReceiptItemSchema } from '../../schemas/receiptSchema';
 
 // 使用 Zod 替代 Yup 的表單驗證規則

@@ -2,10 +2,10 @@ import FuseScrollbars from '@fuse/core/FuseScrollbars';
 import { styled } from '@mui/material/styles';
 import clsx from 'clsx';
 import { memo } from 'react';
-import Navigation from 'src/components/theme-layouts/components/navigation/Navigation';
-import UserMenu from 'src/components/theme-layouts/components/UserMenu';
+import Navigation from '@/components/theme-layouts/components/navigation/Navigation';
+import UserMenu from '@/components/theme-layouts/components/UserMenu';
 import { Divider } from '@mui/material';
-import NavbarPinToggleButton from 'src/components/theme-layouts/components/navbar/NavbarPinToggleButton';
+import NavbarPinToggleButton from '@/components/theme-layouts/components/navbar/NavbarPinToggleButton';
 import Logo from '../../../../components/Logo';
 
 const Root = styled('div')(({ theme }) => ({

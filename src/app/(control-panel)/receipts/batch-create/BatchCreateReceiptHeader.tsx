@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 import { motion } from 'motion/react';
 import { useFormContext } from 'react-hook-form';
 import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
-import PageBreadcrumb from 'src/components/PageBreadcrumb';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 import useNavigate from '@fuse/hooks/useNavigate';
 import { useAuth } from '@/contexts/AuthContext';
 import { maxNumberGetDbNumber } from '@/@max-numbers/maxNumberApi';

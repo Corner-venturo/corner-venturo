@@ -14,9 +14,9 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Tooltip from '@mui/material/Tooltip';
 import Link from '@fuse/core/Link';
 import { Receipt } from '../../../ReceiptApi';
-import { getReceiptTypeName } from 'src/constants/receiptTypes';
-import { getReceiptStatusName, getReceiptStatusColor } from 'src/constants/receiptStatus';
-import { RECEIPT_TYPES } from 'src/constants/receiptTypes';
+import { getReceiptTypeName } from '@/constants/receiptTypes';
+import { getReceiptStatusName, getReceiptStatusColor } from '@/constants/receiptStatus';
+import { RECEIPT_TYPES } from '@/constants/receiptTypes';
 import LinkPayExpandableRow from '../../../LinkPayExpandableRow';
 import { format } from 'date-fns';
 

@@ -1,11 +1,11 @@
 import { styled } from '@mui/material/styles';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import { useAppDispatch, useAppSelector } from 'src/store/hooks';
+import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import {
 	navbarCloseMobile,
 	resetNavbar,
 	selectFuseNavbar
-} from 'src/components/theme-layouts/components/navbar/navbarSlice';
+} from '@/components/theme-layouts/components/navbar/navbarSlice';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import { Theme } from '@mui/system/createTheme';
 import clsx from 'clsx';

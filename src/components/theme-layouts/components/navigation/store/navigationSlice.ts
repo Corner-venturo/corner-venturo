@@ -1,10 +1,10 @@
 import { createEntityAdapter, createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { AppThunk, RootState } from 'src/store/store';
+import { AppThunk, RootState } from '@/store/store';
 import { PartialDeep } from 'type-fest';
 import { FuseFlatNavItemType, FuseNavItemType } from '@fuse/core/FuseNavigation/types/FuseNavItemType';
 import FuseNavigationHelper from '@fuse/utils/FuseNavigationHelper';
 import FuseNavItemModel from '@fuse/core/FuseNavigation/models/FuseNavItemModel';
-import navigationConfig from 'src/configs/navigationConfig';
+import navigationConfig from '@/configs/navigationConfig';
 
 const navigationAdapter = createEntityAdapter<FuseFlatNavItemType>();
 

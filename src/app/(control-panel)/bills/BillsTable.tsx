@@ -1,6 +1,6 @@
 import { useMemo, useState, useEffect } from 'react';
 import { type MRT_ColumnDef } from 'material-react-table';
-import DataTable from 'src/components/data-table/DataTable';
+import DataTable from '@/components/data-table/DataTable';
 import FuseLoading from '@fuse/core/FuseLoading';
 import { Typography, Paper, Button } from '@mui/material';
 import Link from '@fuse/core/Link';
@@ -8,7 +8,7 @@ import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
 import { useDeleteBillsMutation, useGetBillsQuery } from './BillApi';
 import { Bill } from './BillApi';
 import { useUserDictionary } from '../users/hooks/useUserDictionary';
-import { BILL_STATUSES, getBillStatusName } from 'src/constants/billStatuses';
+import { BILL_STATUSES, getBillStatusName } from '@/constants/billStatuses';
 import { format } from 'date-fns';
 import BillSearchDialog from './components/BillSearchDialog';
 

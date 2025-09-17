@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import clsx from 'clsx';
 import { memo } from 'react';
 import { Divider } from '@mui/material';
-import UserMenu from 'src/components/theme-layouts/components/UserMenu';
+import UserMenu from '@/components/theme-layouts/components/UserMenu';
 import Logo from '../../components/Logo';
 import Navigation from '../../components/navigation/Navigation';
 import GoToDocBox from '../../components/GoToDocBox';

@@ -16,7 +16,7 @@ import AddIcon from '@mui/icons-material/Add';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { InvoiceItem } from '@/app/(control-panel)/invoices/InvoiceApi';
-import { getInvoiceItemTypeName } from 'src/constants/invoiceItemTypes';
+import { getInvoiceItemTypeName } from '@/constants/invoiceItemTypes';
 import InvoiceItemDialog from './InvoiceItemDialog';
 
 type InvoiceItemsTableProps = {

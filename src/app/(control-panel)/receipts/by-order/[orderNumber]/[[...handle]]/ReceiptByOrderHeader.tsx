@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import Link from '@fuse/core/Link';
 import { motion } from 'motion/react';
 import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
-import PageBreadcrumb from 'src/components/PageBreadcrumb';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 
 type ReceiptByOrderHeaderProps = {
 	orderNumber: string;

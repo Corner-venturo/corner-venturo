@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 import { useFormContext } from 'react-hook-form';
 import { useParams } from 'next/navigation';
 import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
-import PageBreadcrumb from 'src/components/PageBreadcrumb';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 import useNavigate from '@fuse/hooks/useNavigate';
 import { useCreateUserMutation, useUpdateUserMutation, useDeleteUserMutation } from '../../UserApi';
 import { User } from '@auth/user';
