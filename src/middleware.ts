@@ -38,7 +38,9 @@ export async function middleware(request: NextRequest) {
 			logCorsViolation(origin, request.nextUrl.pathname);
 
 			// 在生產環境中返回 CORS 錯誤
-			if (process.env.NODE_ENV === 'production') {
+			// 使用環境變數的方式改為靜態檢查
+			const isProduction = request.nextUrl.hostname !== 'localhost' && !request.nextUrl.hostname.includes('127.0.0.1');
+			if (isProduction) {
 				return createCorsErrorResponse(`Origin ${origin} is not allowed`);
 			}
 		}
