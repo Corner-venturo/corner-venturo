@@ -3,9 +3,16 @@ import { cookies } from 'next/headers';
 
 export async function createClient(isAdmin = false) {
 	const cookieStore = await cookies();
+	const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 	const supabaseKey = isAdmin ? process.env.SUPABASE_SERVICE_ROLE : process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-	return createServerClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, supabaseKey!, {
+	if (!supabaseUrl || !supabaseKey) {
+		throw new Error(
+			`Missing Supabase environment variables. URL: ${supabaseUrl ? 'Present' : 'Missing'}, Key: ${supabaseKey ? 'Present' : 'Missing'}`
+		);
+	}
+
+	return createServerClient(supabaseUrl, supabaseKey, {
 		cookies: {
 			getAll() {
 				return cookieStore.getAll();
